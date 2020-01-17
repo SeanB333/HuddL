@@ -1,0 +1,11 @@
+.icon-menu {
+    font-size: 2.5rem;
+    border: solid rgb(228, 228, 228, 0.3) .4px;
+    border-radius: 5px;
+}
+
+.img-menu {
+    width: 100%;
+    filter: blur(.5px);
+}
+
