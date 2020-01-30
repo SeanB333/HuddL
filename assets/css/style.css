@@ -1,12 +1,50 @@
-.icon-menu {
-    font-size: 2.5rem;
-    border: solid rgb(228, 228, 228, 0.3) .4px;
-    border-radius: 5px;
-    font-family: 'Lobster', cursive;
+body {
+    background-color: #182952;
+    overflow: hidden;
 }
 
 .img-menu {
     width: 100%;
     filter: blur(.5px);
+}
+
+.title {
+    color: white;
+    font-family: 'Lobster', cursive;
+}
+
+.nav-icons {
+    color: white;
+    margin-top: 10px;
+}
+
+.widget {
+    border: 5px solid #7045af;
+    border-radius: 5px;
+    min-height: 30vh;
+    max-height: 30vh;
+}
+
+.chart {
+    border: 5px solid #7045af;
+    border-radius: 5px;
+    min-height: 50vh;
+    max-height: 50vh;
+}
+ 
+.bg-darkblue {
+    background-color: #182952;
+}
+
+.bg-medblue {
+    background-color: #2b3595;
+}
+
+.bg-darkpurp {
+    background-color: #7045af;
+}
+
+.bg-lightpurp {
+    background-color: #e14594;
 }
 

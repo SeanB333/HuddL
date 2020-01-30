@@ -11,32 +11,35 @@
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
     integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
   <link rel="stylesheet" href="./assets/materialize/css/materialize.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.css">
   <link rel="stylesheet" href="./assets/css/style.css">
   <title>HuddL</title>
 </head>
 
-<body class="grey darken-3">
-  <div class="purple accent-2 p-3">
-    <div class="row">
-      <div class="col-lg-1">
-        <a href="#" data-target="slide-out" class="sidenav-trigger"><i
-            class="shadow icon-menu material-icons white-text">menu</i></a>
+<body>
+
+  <!-- Nav area  -->
+  <div class="bg-lightpurp">
+    <div class="row d-flex align-items-center">
+      <div class="col-4">
+        <a href="#" data-target="slide-out" class="sidenav-trigger">
+          <i class="small material-icons text-white mx-3 nav-icons">menu</i>
+        </a>
       </div>
-      <div class="col-lg-2">
-        <h5>HUDDL</h5>
+      <div class="col-4">
+        <h4 class="title text-center nav-icons">Huddl</h4>
       </div>
 
-      <div class="col-lg-2">
-        <img src="./assets/img/Hlogo.png" alt="profile picture" width="50vw">
+      <div class="col-4 text-white text-right">
+        <i class="small material-icons mx-3 nav-icons">chat_bubble_outline</i>
+        <i class="small material-icons mx-3 nav-icons">email</i>
+        <i class="small material-icons mx-3 nav-icons">face</i>
       </div>
     </div>
-
-
-
   </div>
+  <!-- nav area  -->
 
-  <!-- <nav class="purple accent-2"> </nav> -->
-
+  <!-- slide menu  -->
   <ul id="slide-out" class="sidenav bg-dark ">
     <li>
       <div class="user-view">
@@ -56,7 +59,30 @@
     <li><a class="subheader text-light">Subheader</a></li>
     <li><a class="waves-effect text-light" href="#!">Third Link With Waves</a></li>
   </ul>
+  <!-- slide menu  -->
 
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-lg-6">
+        <div class="widget">w</div>
+      </div>
+      <div class="col-lg-6">
+        <div class="widget"></div>
+      </div>
+    </div>
+    <div class="row">
+      <div class="col-lg-8">
+        <div class="chart">
+          <canvas id="bar" class="bg-medblue" width="auto" height="114vh"></canvas>
+        </div>
+      </div>
+      <div class="col-lg-4">
+        <div class="chart">
+          <canvas id="pie" class="bg-medblue" width="auto" height="235vh"></canvas>
+        </div>
+      </div>
+    </div>
+  </div>
 
 
 
@@ -73,6 +99,9 @@
   <script src="./assets/js/main.js"></script>
   <script src="./assets/js/sidenav.js"></script>
   <script src="./assets/materialize/js/materialize.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
+  <script src="./assets/js/chart1.js"></script>
+  <script src="./assets/js/chart2.js"></script>
 </body>
 
 </html>
