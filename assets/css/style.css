@@ -1,6 +1,12 @@
-body {
-    background-color: #182952;
-    overflow: hidden;
+@import url("login.css");
+@import url("loader.css");
+
+:root {
+    --one-bg :#202040;
+    --two-bg :#202060;
+    --three-bg:#602080;
+    --four-bg:#b030b0;
+    --one-color:white;
 }
 
 .img-menu {
@@ -9,42 +15,68 @@ body {
 }
 
 .title {
-    color: white;
+    color: var(--one-color);
     font-family: 'Lobster', cursive;
 }
 
 .nav-icons {
-    color: white;
+    color: var(--one-color);
     margin-top: 10px;
 }
 
 .widget {
-    border: 5px solid #7045af;
+    border: 3px solid var(--three-bg);
     border-radius: 5px;
     min-height: 30vh;
     max-height: 30vh;
 }
 
 .chart {
-    border: 5px solid #7045af;
+    border: 3px solid var(--three-bg);
     border-radius: 5px;
     min-height: 50vh;
     max-height: 50vh;
 }
  
-.bg-darkblue {
-    background-color: #182952;
+.bg-one {
+    background-color: var(--one-bg);
 }
 
-.bg-medblue {
-    background-color: #2b3595;
+.bg-two {
+    background-color: var(--two-bg);
 }
 
-.bg-darkpurp {
-    background-color: #7045af;
+.bg-three {
+    background-color: var(--three-bg);
 }
 
-.bg-lightpurp {
-    background-color: #e14594;
+.bg-four {
+    background-color: var(--four-bg);
+}
+
+.bg-grad {
+   background: linear-gradient(321deg, #202040, #602080, #202060, #b030b0);
+background-size: 800% 800%;
+
+-webkit-animation: bg-grad 36s ease infinite;
+-moz-animation: bg-grad 36s ease infinite;
+animation: bg-grad 36s ease infinite; 
+}
+
+
+@-webkit-keyframes bg-grad {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@-moz-keyframes bg-grad {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
+}
+@keyframes bg-grad {
+    0%{background-position:0% 4%}
+    50%{background-position:100% 97%}
+    100%{background-position:0% 4%}
 }
 

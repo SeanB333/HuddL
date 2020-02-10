@@ -1,0 +1,17 @@
+
+.center-box{
+    color: white;
+   margin: 0;
+    position: absolute;
+    top: 45%;
+    left: 48%; 
+}
+
+.login-box {
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+    background-color: var(--three-bg);
+    width: 120%;
+    height: 50%;
+}
+
