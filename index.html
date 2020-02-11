@@ -16,7 +16,7 @@
   <title>HuddL</title>
 </head>
 
-<body class="bg-grad">
+<body class="bg-one">
 
   <div class="container">
     <div class="center-box text-center">
@@ -26,9 +26,10 @@
         <div class="row py-5">
           <div class="col-2"></div>
           <div class="col-8">
-            <input class="form-control text-center" placeholder="user name">
-            <input class="form-control text-center" placeholder="password">
-            <button id="login" class="btn my-5" >log in</button>
+            <input id="email" class="form-control text-center" placeholder="email">
+            <input id="password" class="form-control text-center" placeholder="password">
+            <button id="login" class="btn pink darken-3 my-5">log in</button>
+            <button id="logout" class="btn pink darken-3 my-5">log out</button>
           </div>
           <div class="col-2"></div>
         </div>
@@ -36,10 +37,11 @@
     </div>
   </div>
 
-  
+
 
 
   <!-- Js links      -->
+  <script src="https://www.gstatic.com/firebasejs/5.5.1/firebase.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
   <script src="https://code.jquery.com/jquery-3.4.1.js" integrity="sha256-WpOohJOqMqqyKL9FccASB9O0KwACQJpFTUBLTYOVvVU="
     crossorigin="anonymous"></script>
@@ -49,12 +51,21 @@
   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
     integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
     crossorigin="anonymous"></script>
-  <script src="./assets/js/main.js"></script>
   <script src="./assets/js/sidenav.js"></script>
   <script src="./assets/materialize/js/materialize.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.3/Chart.js"></script>
-  <script src="./assets/js/chart1.js"></script>
-  <script src="./assets/js/chart2.js"></script>
+  <script src="./assets/js/app.js"></script>
+  <!-- Insert these scripts at the bottom of the HTML, but before you use any Firebase services -->
+  <!-- Firebase App (the core Firebase SDK) is always required and must be listed first -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-app.js"></script>
+  <!-- If you enabled Analytics in your project, add the Firebase SDK for Analytics -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-analytics.js"></script>
+  <!-- Add Firebase products that you want to use -->
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.8.0/firebase-firestore.js"></script>
+
+
+
 </body>
 
 </html>
