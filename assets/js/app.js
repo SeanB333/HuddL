@@ -20,7 +20,10 @@ $(document).ready(function () {
         const email = $("#email").val();
         const password = $("#password").val();
         
-        firebase.auth().signInWithEmailAndPassword(email, password).catch(function(error) {
+        firebase.auth().signInWithEmailAndPassword(email, password)
+        .then(function(){
+            window.location.href="./dashboard.html"
+        }).catch(function(error) {
             // Handle Errors here.
             var errorCode = error.code;
             var errorMessage = error.message;
